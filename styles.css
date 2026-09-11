@@ -51,8 +51,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100%;
-  padding: 0 20%;
+  width: 100vw;
+  padding: 0 15%;
 }
 
 .card1 {
@@ -76,9 +76,28 @@ body {
   padding: 10px 20px;
   border-radius: var(--radius-lg);
   border: none;
+  display: inline-block;
+  margin-bottom: var(--space-3);
 }
 
 .card p {
   margin: var(--space-3) 0 var(--space-5);
+}
+
+.card span img {
+  margin-bottom: var(--space-4);
+}
+
+
+
+
+/* RESPONISVENESS */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: var(--space-4) 20%;
+  }
 }
  
