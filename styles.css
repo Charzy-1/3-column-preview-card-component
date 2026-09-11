@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700&family=Lexend+Deca:wght@400&display=swap');
+
 :root {
   --gold-500: hsl(31, 77%, 52%);
   --cyan-800: hsl(184, 100%, 22%);
@@ -20,13 +22,13 @@
   --space-6: 6rem;
   
   /* ---- type ---- */
-  --font-display: Georgia, 'Times New Roman', serif;
-  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;  
+  --font-display: 'Big Shoulders', sans-serif;
+  --font-body: 'Lexend Deca', sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-weight: 700;
   color: var(--Gray-100);
   text-transform: uppercase;
 }
@@ -52,12 +54,14 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  padding: 0 15%;
+  padding: 0 18%;
 }
+
 
 .card1 {
   background: var(--gold-500);
   padding: var(--space-3);
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 }
 .card2 {
   background: var(--cyan-800);
@@ -66,6 +70,7 @@ body {
 .card3 {
   background: var(--green-950);
   padding: var(--space-3);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 .btn {
@@ -80,12 +85,23 @@ body {
   margin-bottom: var(--space-3);
 }
 
+.card1-btn {
+  color: var(--gold-500);
+}
+
 .card p {
   margin: var(--space-3) 0 var(--space-5);
 }
 
 .card span img {
-  margin-bottom: var(--space-4);
+  margin: var(--space-3) 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--green-950);
+  font-size: 14px;
 }
 
 
@@ -98,6 +114,14 @@ body {
     height: 100%;
     width: 100%;
     padding: var(--space-4) 20%;
+  }
+
+  .card1 {
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  }
+
+  .card3 {
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
   }
 }
  
