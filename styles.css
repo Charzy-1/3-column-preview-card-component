@@ -24,10 +24,17 @@
   --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;  
 }
 
+h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  color: var(--Gray-100);
+}
+
 body {
-    font-family: var(--font-body);
-    line-height: 1.5;
-  }
+  font-family: var(--font-body);
+  line-height: 1.5;
+  color: var(--Transparent-white);
+}
 
 
 /* CSS RESET */
@@ -36,5 +43,28 @@ body {
   margin: 0; 
   padding: 0;
  }
+
+/* CONTAINER STYLING */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0 20%;
+}
+
+.card1 {
+  background: var(--gold-500);
+  padding: var(--space-3);
+}
+.card2 {
+  background: var(--cyan-800);
+  padding: var(--space-3);
+}
+.card3 {
+  background: var(--green-950);
+  padding: var(--space-3);
+}
 
  
