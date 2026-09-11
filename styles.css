@@ -113,7 +113,7 @@ footer {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    padding: var(--space-4) 20%;
+    padding: var(--space-4) 5%;
   }
 
   .card1 {
